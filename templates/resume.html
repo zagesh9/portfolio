@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="main">
+  <div class="page-title" data-aos="fade">
+    <section id="blank" class="blank section">
+      <div class="container"></div>
+      </section>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li class="current">Resume</li>
+        </ol>
+      </div>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume section">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="resume-title">Sumary</h3>
+
+          <div class="resume-item pb-0">
+            <h4>Zagesh Rathod</h4>
+            <p><em>Self-taught developer with 1.4 years of experience, specializing in backend development using the Django framework. Proven ability to build and maintain scalable web applications and implement efficient solutions.</em></p>
+            <ul>
+              <li>Mumbai, IN</li>
+              <li>+91 9702909318</li>
+              <li>zageshh@gmail.com</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Bachelor of Commerce</h4>
+            <h5>2012 - 2015</h5>
+            <p><em>Bhavans College, Mumbai</em></p>
+          </div><!-- End Resume Item -->
+
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Python Developer</h4>
+            <h6>PCI Pest Control</h6>
+            <h5>May 2023 - Mar 2024</h5>
+            <p><em>Mumbai, IN</em></p>
+            <ul>
+              <li>Consolidated 2 PHP projects into a dynamic website using the Django framework, enhancing user experience with a 50% efficiency improvement and a 30% reduction in load times</li>
+              <li>Engineered and deployed 13 REST APIs on the Google Cloud Platform (GCP), significantly improving operational efficiency through rigorous testing and seamless integration</li>
+              <li>Developed a scalable full-stack solution with PostgreSQL and Google Authentication, implementing a robust role-based access control system for enhanced security, now used by over 10,000 employees</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+          <div class="resume-item">
+            <h4>Trainee Python/Frappe Developer</h4>
+            <h6>Atrina Technologies</h6>
+            <h5>Nov 2022 - May 2023</h5>
+            <p><em>Mumbai, IN</em></p>
+            <ul>
+              <li>Managed and optimized the organization's ERP system, ensuring seamless functionality across all departments and supporting critical business processes</li>
+              <li>Achieved data accuracy and operational efficiency, successfully upgrading the ERP system from v13 to v14 with zero data loss</li>
+              <li>Pioneered the deployment of the framework on Docker, enhancing scalability and deployment efficiency across the organization</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+          <div class="resume-item">
+            <h4> Associate-CS Phone</h4>
+            <h6>Sutherland Global Services</h6>
+            <h5>Nov 2020 - Oct 2021</h5>
+            <p><em>Mumbai, IN</em></p>
+            <ul>
+              <li>Delivered exceptional customer service, resolving 95% of customer issues through effective communication and problem-solving skills</li>
+              <li>Demonstrated exceptional multitasking abilities, handling up to 100 calls simultaneously while maintaining a 95% customer satisfaction rate</li>
+              <li>Consistently achieved and exceeded daily and weekly call volume targets, contributing to a 98% customer retention rate</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+          <div class="resume-item">
+            <h4>Executive - YouTube</h4>
+            <h6>Indian Performing Right Society Limited</h6>
+            <h5>May 2019 - Mar 2020</h5>
+            <p><em>Mumbai, IN</em></p>
+            <ul>
+              <li>Managed the YouTube Content Management System (CMS) to oversee and organize digital assets, ensuring that music videos were properly categorized, tagged, and aligned with copyright guidelines</li>
+              <li>Monitored ongoing claims related to music videos, addressing disputes or issues by reviewing claim details and collaborating with rights holders to resolve content ownership conflicts efficiently</li>
+              <li>Utilized YouTube's bulk claiming features to identify and claim multiple music videos at once, protecting intellectual property rights for a wide range of content, while streamlining the copyright enforcement process</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>CSA</h4>
+            <h6>Tech Mahindra Business Services</h6>
+            <h5>Nov 2016 - Jun 2017</h5>
+            <p><em>Mumbai, IN</em></p>
+            <ul>
+              <li>Processed and activated SIM cards by verifying customer forms, ensuring that all required documents were accurate and compliant with regulatory standards before completing activation</li>
+              <li>Handled port-in and port-out requests, assisting customers in transferring their mobile numbers between service providers while maintaining data integrity and minimizing service interruptions</li>
+              <li>Assisted customers in changing their mobile service price plans, analyzing requests, and implementing adjustments in the system to meet customer preferences and billing requirements</li>
+            </ul>
+          </div>  
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Resume Section -->
+
+</main>
+{% endblock %}
