@@ -15,3 +15,12 @@ def projects(request):
 def contact(request):
     return render(request, 'contact.html')
 
+import os
+def test():
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    print(BASE_DIR)
+
+from pathlib import Path
+def test2():
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    print(os.path.join(BASE_DIR, 'staticfiles'))
