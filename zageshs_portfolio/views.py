@@ -13,14 +13,9 @@ def projects(request):
     return render(request, 'projects.html')
 
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        
     return render(request, 'contact.html')
-
-import os
-def test():
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    print(BASE_DIR)
-
-from pathlib import Path
-def test2():
-    BASE_DIR = Path(__file__).resolve().parent.parent
-    print(os.path.join(BASE_DIR, 'staticfiles'))
